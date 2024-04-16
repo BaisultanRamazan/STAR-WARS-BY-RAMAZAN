@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+    body {
+        font-family: 'Poppins';font-size: 22px;
+    }
+    </style>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-sale=1.0">
+<title>STAR WARS (WS)</title>
+<link href="whitesidepage.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <img src="/website/pictures/Дизайн без названия.png">
+        <button class="btn">QUIZ</button>
+    </div>
+    <div class="active">
+        <li><a href="#home">News</a></li>
+        <li><a href="#news">Characters</a></li>
+        <li><a href="#contact">Planets</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+    <ul>
+      <div class="scroll" style="--t:10s">
+        <div>
+            <span>Yes</span>
+            <span>No</span>
+            <span>Maby</span>
+            <span>Whatever</span>
+            <span>Probably</span>
+            <span>Indeed</span>
+            <span>Sure</span>
+            <span>No</span>
+            <span>Maby</span>
+            <span>Whatever</span>
+            <span>Probably</span>
+            <span>Indeed</span>
+            <span>Sure</span>
+        </div>
+        </div>
+        <div class="news">
+        <p>NEWS</p>
+        </div>
+        <div class ="gallery-wrap">
+            <img src="/website/pictures/3BC3B3__1_-removebg-preview.png" id="backBtn">
+
+            <div class="gallery">
+                <div>
+                <span><img src="/website/pictures/Rectangle 15.png"></span>
+                <span><img src="/website/pictures/Rectangle 15.png"></span>
+                <span><img src="/website/pictures/Rectangle 15.png"></span>
+                </div>
+                <div>
+                    <span><img src="/website/pictures/Rectangle 15.png"></span>
+                    <span><img src="/website/pictures/Rectangle 15.png"></span>
+                    <span><img src="/website/pictures/Rectangle 15.png"></span>
+            </div>
+            </div>
+            <img src="/website/pictures/3BC3B3-removebg-preview.png" id="nextBtn">
+        </div>
+        
+        
+     <script>
+        let scrollContainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+        scrollContainer.addEventListener("wheel", (evt) => {
+            eve.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+        });
+
+        nextBtn.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 600;
+        });
+        backBtn.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 600;
+        });
+
+     </script>
+        
+</body>
+</html>
